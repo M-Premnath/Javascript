@@ -182,7 +182,7 @@ font-size: 1.5rem;
 font-weight: 500;
 background: linear-gradient(to right, blue, violet );
 background-clip: text;
-background-color: transparent;
+color: transparent;
 }
 ::-webkit-scrollbar{
     width: 20px;
@@ -192,6 +192,7 @@ background-color: transparent;
 }
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(to bottom, blue, violet );
+    padding: 2px;
 }
 .projects-grid{
     display: grid;
@@ -228,4 +229,34 @@ background-color: transparent;
 .projects-card h3{
     font-size: 2rem;
     font-weight: 500;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5rem;
+    position: relative;
+}
+.input-box input{
+    border-radius: 3rem;
+    border: 2px solid black;
+    padding: 2rem 8rem;
+    font-size: 3rem;
+}
+.input-box input::placeholder{
+    font-size: 3rem;
+}
+.input
+{
+    position: relative;
+}
+.input i{
+    position: absolute;
+    font-size: 4rem;
+    top: 0;
+    left: 10px;
+    transform: translate(50%, 50%);
 }
